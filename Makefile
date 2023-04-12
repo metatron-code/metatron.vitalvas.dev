@@ -44,3 +44,5 @@ upload:
 		--cache-control "public, max-age=43200"
 
 all: clean build package deploy upload
+
+site-deploy: clean build upload
