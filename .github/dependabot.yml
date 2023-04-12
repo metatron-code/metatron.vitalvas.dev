@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    commit-message:
+      prefix: "ci:"
+    schedule:
+      interval: weekly
+      day: sunday
+    reviewers:
+      - "vitalvas"
+    assignees:
+      - "vitalvas"
