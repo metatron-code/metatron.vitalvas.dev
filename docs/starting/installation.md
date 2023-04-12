@@ -1,6 +1,6 @@
 # Installation
 
-Currently, there is only one way to install the agent - using `snapd`.
+Currently, there is only one way to install the agent - using [snapd](https://snapcraft.io/docs/installing-snapd).
 
 ??? warning
     Installation using other methods may be treated as a violation of the terms of use.

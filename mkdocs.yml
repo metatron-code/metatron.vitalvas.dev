@@ -1,13 +1,16 @@
 site_name: MetaTron
 
 docs_dir: docs/
-repo_name: 'metatron-code/metatron.vitalvas.dev'
+repo_name: 'metatron.vitalvas.dev'
 repo_url: 'https://github.com/metatron-code/metatron.vitalvas.dev'
 edit_uri: edit/main/docs/
 
 theme:
   name: 'material'
   language: en
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/alien-outline
   features:
     - header.autohide
     - navigation.tabs
@@ -15,6 +18,21 @@ theme:
     - navigation.sections
     - navigation.expand
     - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 markdown_extensions:
   - md_in_html
@@ -23,7 +41,17 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
 nav:
   - Home: index.md
   - Getting started:
-    - Installation: installation.md
+    - Requirements: starting/requirements.md
+    - Installation: starting/installation.md
