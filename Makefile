@@ -39,6 +39,7 @@ cf-deploy: package deploy
 upload:
 	aws s3 sync build/public \
 		s3://metatron.vitalvas.dev \
+		--delete \
 		--acl public-read \
 		--cache-control "public, max-age=43200"
 
