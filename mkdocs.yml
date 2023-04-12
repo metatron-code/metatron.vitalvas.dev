@@ -1,0 +1,20 @@
+site_name: MetaTron
+
+docs_dir: docs/
+repo_name: 'metatron-code/metatron.vitalvas.dev'
+repo_url: 'https://github.com/metatron-code/metatron.vitalvas.dev'
+edit_uri: edit/main/docs/
+
+theme:
+  name: 'material'
+  features:
+    - header.autohide
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+
+markdown_extensions:
+  - md_in_html
+  - tables

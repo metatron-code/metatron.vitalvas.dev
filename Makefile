@@ -17,6 +17,9 @@ clean:
 deps:
 	mkdir -p build
 
+build:
+	mkdocs build --site-dir build/public
+
 package: deps
 	aws cloudformation package \
 		--template-file .deploy/template.yaml \

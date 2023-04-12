@@ -25,5 +25,13 @@ jobs:
           aws-region: eu-west-1
           role-to-assume: arn:aws:iam::270200189114:role/github-actions-metatron-vitalvas-dev
 
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
       - name: Deploy
         run: make all
