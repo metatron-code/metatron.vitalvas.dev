@@ -55,3 +55,4 @@ nav:
   - Getting started:
     - Requirements: starting/requirements.md
     - Installation: starting/installation.md
+    - Debugging: starting/debugging.md
